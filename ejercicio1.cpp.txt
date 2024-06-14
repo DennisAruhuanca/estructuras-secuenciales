@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	double largo, alto, suma;
+	cout << "Ingrese el largo del rectangulo: ";
+	cin >> largo;
+	cout << "ingrese el alto del rectangulo: ";
+	cin >> alto;
+	suma = 2 * largo + 2 * alto;
+	cout << "el perimetro del rectangulo es: " << suma << endl;
+	return 0;
+}
+
