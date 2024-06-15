@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	double largo, apotema, area;
+	cout << "Ingrese el largo de una parte del pentagono: ";
+	cin >> largo;
+	cout << "Ingrese el apotema del pentagono: ";
+	cin >> apotema;
+	area = 5 * largo * apotema / 2 ;
+	cout << "El area del pentagono es: " << area << endl;
+	return 0;
+}
