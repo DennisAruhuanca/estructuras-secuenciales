@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	double soles, dolar, conv;
+	cout << "Ingrese ingrese la cantidad de soles que desea convertir a dolares: ";
+	cin >> soles;
+	cout << "Ingrese el precio del dolar actual: ";
+	cin >> dolar;
+	conv = soles * dolar;
+	cout << "La conversion de soles a dolares es: " << conv << endl;
+	return 0;
+}
