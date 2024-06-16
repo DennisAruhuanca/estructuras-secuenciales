@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	double inversion, dinero, gana, ganancia;
+	cout << "Ingrese su inversion en el banco: ";
+	cin >> inversion;
+	ganancia = inversion * 0.02;
+	gana = inversion + ganancia;
+	cout << "El dinero ganado en un mes con el banco es: " << gana << endl;
+	return 0;
+}
