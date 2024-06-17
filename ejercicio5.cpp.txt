@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	double sueldo, ven1, ven2, ven3, com1, com2, com3, gana;
+	cout << "Ingrese el suelo base: ";
+	cin >> sueldo;
+	cout << "Ingrese la venta 1: ";
+	cin >> ven1;
+	cout << "Ingrese la venta 2: ";
+	cin >> ven2;
+	cout << "Ingrese la venta 3: ";
+	cin >> ven3;
+	com1 = ven1 * 0.1;
+	com2 = ven2 * 0.1;
+	com3 = ven3 * 0.1;
+	gana = sueldo + com1 + com2 + com3;
+	cout << "El sueldo ganado mas las comisiones por las ventas es: " << gana << endl;
+	return 0;
+}
