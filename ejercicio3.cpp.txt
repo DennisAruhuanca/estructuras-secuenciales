@@ -2,12 +2,21 @@
 using namespace std;
 
 int main (){
-	double largo, apotema, area;
-	cout << "Ingrese el largo de una parte del pentagono: ";
-	cin >> largo;
-	cout << "Ingrese el apotema del pentagono: ";
-	cin >> apotema;
-	area = 5 * largo * apotema / 2 ;
-	cout << "El area del pentagono es: " << area << endl;
-	return 0;
+	int descuento, pago, N_C, P_F;
+	cout <<"Ingrese el numero de camisas: ";
+	cin >> N_C;
+	cout <<"Ingrese el pago total: ";
+	cin >> pago;
+	if (N_C >= 3){
+		descuento = pago * 0.2;
+		P_F = pago - descuento;
+		
+	} else { 
+		descuento = pago * 0.1;
+		P_F = pago - descuento;
+	
+	}	
+		cout <<"El el pago final sera de: " << P_F << endl;
+	return 0;		
+	
 }
