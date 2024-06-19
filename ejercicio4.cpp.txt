@@ -2,11 +2,17 @@
 using namespace std;
 
 int main (){
-	double inversion, dinero, gana, ganancia;
-	cout << "Ingrese su inversion en el banco: ";
-	cin >> inversion;
-	ganancia = inversion * 0.02;
-	gana = inversion + ganancia;
-	cout << "El dinero ganado en un mes con el banco es: " << gana << endl;
-	return 0;
+	int descuento, pago, num, compra;
+	cout <<"Ingrese un numero entre el 1 y el 100: ";
+	cin >> num;
+	cout <<"Ingrese el total de la compra: ";
+	cin >> compra;
+	if (num < 74){
+		descuento = compra * 0.15;	
+	} else { 
+		descuento = compra * 0.2;
+	}	
+	cout <<"El descuento del pago sera de: " << descuento << endl;
+	return 0;		
+	
 }
