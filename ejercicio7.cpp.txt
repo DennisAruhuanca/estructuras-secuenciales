@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	double n_cono, n_des, n_pro, e_cono, e_des, e_pro, nota_final;
+	cout << "Ingrese nota de conocimiento: ";
+	cin >> n_cono;
+	cout << "Ingrese nota de desempeño: ";
+	cin >> n_des;
+	cout << "Ingrese nota de producto: ";
+	cin >> n_pro;
+	e_cono = n_cono * 0.4;
+	e_des = n_des * 0.35;
+	e_pro = n_pro * 0.25;
+	nota_final = e_cono + e_des + e_pro;
+	cout << "El pago total sera de: " << nota_final << endl;
+	return 0;
+}
