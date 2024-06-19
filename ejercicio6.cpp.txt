@@ -2,11 +2,22 @@
 using namespace std;
 
 int main (){
-	double pago, compra, descuento;
-	cout << "Ingrese el precio de la compra: ";
-	cin >> compra;
-	descuento = compra * 0.15;
-	pago = compra - descuento;
-	cout << "El pago total sera de: " << pago << endl;
-	return 0;
+	int prom, p_edu, des, p_fin, IGB;
+	cout <<"Ingrese el promedio del alumno: ";
+	cin >> prom;
+	cout <<"Ingrese el pago de su pension educativa: ";
+	cin >> p_edu;
+				
+	if (prom >= 18){
+		des = p_edu * 0.3;
+		p_fin = p_edu - des;
+	
+	} else { 
+		IGB = p_edu * 0.18;
+		p_fin = p_edu + IGB;
+	
+	}	
+	cout <<"El  pago final de su pension educativa es: " << p_fin << endl;
+	return 0;		
+	
 }
