@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	double pago, compra, descuento;
+	cout << "Ingrese el precio de la compra: ";
+	cin >> compra;
+	descuento = compra * 0.15;
+	pago = compra - descuento;
+	cout << "El pago total sera de: " << pago << endl;
+	return 0;
+}
